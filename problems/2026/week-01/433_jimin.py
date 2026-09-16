@@ -33,18 +33,54 @@ class Solution:
                 if can_mutate(startGene, bank[i]):
                     graph[startGene].append(bank[i])
 
-
-        def dfs(node, visited):
-            ans = float('inf')
-            if node == endGene:
-                return len(visited)
-            for nxt in graph[node]:
+        q = deque([(startGene, 0)])
+        visited = set(startGene)
+        while q:
+            curGene, distance = q.popleft()
+            if curGene == endGene:
+                return distance
+            for nxt in graph[curGene]:
                 if nxt not in visited:
-                    visited.append(nxt)
-                    mutations = dfs(nxt, visited[:])
-                    visited.pop()
-                    if mutations != -1:
-                        ans = min(ans, mutations)
-            return -1 if ans == float('inf') else ans
+                    q.append((nxt, distance + 1))
+                    visited.add(nxt)
 
-        return dfs(startGene, [])
+        return -1
+
+    #     def dfs(node, visited):
+    #         ans = float('inf')
+    #         if node == endGene:
+    #             return len(visited)
+    #         for nxt in graph[node]:
+    #             if nxt not in visited:
+    #                 visited.append(nxt)
+    #                 mutations = dfs(nxt, visited[:])
+    #                 visited.pop()
+    #                 if mutations != -1:
+    #                     ans = min(ans, mutations)
+    #         return -1 if ans == float('inf') else ans
+
+    #     return dfs(startGene, [])
+
+    # # 클로드 풀이
+    # def minMutation(self, startGene: str, endGene: str, bank: List[str]) -> int:
+    #     if endGene not in bank:
+    #         return -1
+
+    #     bank_set = set(bank)
+    #     queue = deque([(startGene, 0)])
+    #     visited = {startGene}
+
+    #     while queue:
+    #         gene, steps = queue.popleft()
+    #         if gene == endGene:
+    #             return steps
+
+    #         for i in range(len(gene)):
+    #             for c in "ACGT":
+    #                 if c != gene[i]:
+    #                     mutated = gene[:i] + c + gene[i+1:]
+    #                     if mutated in bank_set and mutated not in visited:
+    #                         visited.add(mutated)
+    #                         queue.append((mutated, steps + 1))
+
+    #     return -1
