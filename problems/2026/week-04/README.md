@@ -1,8 +1,8 @@
 # 2026 Week 04
 
-**Meeting:** October 7, 2026, 4:30 PM–6:00 PM  
-**Live-coding interviewee:** TBD  
-**Interviewers / observers:** TBD
+- **Meeting:** October 7, 2026, 4:30 PM–6:00 PM
+- **Live-coding interviewee:** TBD
+- **Interviewers / observers:** TBD
 
 ## Problems
 
