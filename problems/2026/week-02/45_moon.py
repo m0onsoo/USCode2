@@ -13,3 +13,6 @@ class Solution:
                     dp[i + step] = min(dp[i + step], dp[i] + 1) 
         
         return dp[n - 1]
+        return dp[n - 1]
+
+        
