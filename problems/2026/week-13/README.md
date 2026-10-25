@@ -8,7 +8,7 @@
 
 | # | Problem | Difficulty | Type |
 | --- | --- | --- | --- |
-| 1 | [30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | Hard | Homework |
+| 1 | [451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) | Medium | Homework |
 | 2 | [48. Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium | Homework |
 | 3 | [189. Rotate Array](https://leetcode.com/problems/rotate-array/) | Medium | Homework |
 | 4 | [Masked](https://leetcode.com/problems/integer-to-roman/) | Medium | Live coding |

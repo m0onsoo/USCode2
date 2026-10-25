@@ -8,7 +8,7 @@
 
 | # | Problem | Difficulty | Type |
 | --- | --- | --- | --- |
-| 1 | [123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | Hard | Homework |
+| 1 | [146. LRU Cache](https://leetcode.com/problems/lru-cache/) | Medium | Homework |
 | 2 | [50. Pow(x, n)](https://leetcode.com/problems/powx-n/) | Medium | Homework |
 | 3 | [148. Sort List](https://leetcode.com/problems/sort-list/) | Medium | Homework |
 | 4 | [Masked](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | Medium | Live coding |
