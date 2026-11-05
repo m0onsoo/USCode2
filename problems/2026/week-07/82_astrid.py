@@ -27,4 +27,24 @@ class Solution:
        
         return dummy.next
 
+    # organized one
+    def deleteDuplicates2(self, head: ListNode | None) -> ListNode | None:
+        dummy = ListNode(0, head)
+
+        prev = dummy
+        cur = ListNode()
+
+        while prev.next:
+            cur = prev.next
+            if cur.next and cur.val == cur.next.val:
+                while cur.next and cur.val == cur.next.val:
+                    cur = cur.next
+                prev.next = cur.next
+            else:
+                prev = prev.next
+                
+        return dummy.next
+
+
+        
             
